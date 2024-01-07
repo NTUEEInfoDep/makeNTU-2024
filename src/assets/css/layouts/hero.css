@@ -1,0 +1,76 @@
+.hero__bg {
+  background-image: url("../images/makeNTU2023-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__transbox:not(.disable-scroll) {
+  border-radius: 2%;
+  background-color: #ffffffee;
+  opacity: 0.85;
+}
+
+.hero__tagline-content-wrap {
+  margin: 30px 40px;
+}
+
+.hero__tagline {
+  @apply flex items-center w-full text-left;
+  color: #333333;
+}
+
+.hero__tagline-title {
+  @apply text-4xl mt-3 mb-3;
+}
+
+.hero__tagline-pretitle {
+  @apply text-2xl;
+}
+
+.hero__tagline-pretitle-image {
+  background-image: url("../images/makeNTU2023Title.png");
+  @apply w-full h-40;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero__tagline-subtitle {
+  @apply italic;
+  color: #cc0049;
+}
+
+.hero__tagline-text {
+  @apply w-full text-lg mr-0 mt-3;
+}
+
+.hero__image {
+  @apply w-full pt-16;
+
+  img {
+    max-height: 342px;
+    max-width: 476px;
+    @apply w-full;
+  }
+}
+
+@screen sm {
+  .hero__tagline-title {
+    @apply text-6xl mt-3 mb-3;
+  }
+
+  .hero__tagline-pretitle {
+    @apply text-3xl;
+  }
+}
+
+@screen md {
+  .hero__tagline {
+    @apply w-1/2;
+  }
+
+  .hero__image {
+    @apply w-1/2 pt-0;
+  }
+}

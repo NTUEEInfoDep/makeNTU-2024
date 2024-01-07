@@ -1,0 +1,51 @@
+.prizes {
+    @apply pt-8 pb-16;
+}
+
+.prize__slider {
+    @apply relative;
+}
+
+.prize__content {
+    @apply relative text-center px-8 pt-8 pb-16 border border-gray rounded shadow-lg bg-white;
+}
+
+.prize {
+    padding: 10px 10px;
+}
+
+.prize__image {
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    @apply absolute rounded-full shadow;
+}
+
+.prize__image2 {
+    object-fit: contain;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    @apply absolute;
+}
+
+.prize__name {
+    @apply block text-xl font-bold leading-none mt-8;
+}
+
+@screen md {
+    .prizes {
+        @apply pb-24;
+    }
+}
+
+.prize__table {
+    @apply relative;
+    display: inline-grid;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.prize__table tr {
+    font-size: 150%;
+}

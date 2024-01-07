@@ -1,0 +1,126 @@
+.posts {
+    justify-content: center;
+}
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    grid-gap: 5vmin;
+}
+
+.post-btn {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    background-color: #0081a8;
+    color: #ffffff;
+    text-align: center;
+    font-size: 21px;
+    transition: all 0.4s;
+    cursor: pointer;
+    height: fit-content;
+    padding: 18px;
+}
+
+.post-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.post-btn span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.post-btn:hover span {
+    padding-right: 25px;
+}
+
+.post-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.postlist-item {
+    padding: 30px 30px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 2px solid rgb(130, 130, 130);
+        transition: transform 0.2s;
+    }
+
+    &:after {
+        transform: translate(3px, 3px);
+    }
+
+    &:before {
+        transform: translate(-3px, -3px);
+    }
+    &:hover {
+        &:after,
+        &:before {
+            transform: translate(0);
+        }
+    }
+}
+
+.hover,
+.hover-red {
+    margin: 15px 15px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.hover:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #0081a8;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-red:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #cc0049;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover:hover:after,
+.hover-red:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

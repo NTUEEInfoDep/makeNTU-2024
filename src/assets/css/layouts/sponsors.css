@@ -1,0 +1,34 @@
+.organizer {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.coorganizers{
+    padding-left: 5%;
+    padding-right: 5%;
+    @apply grid grid-cols-3
+}
+
+.sponsors {
+    padding-left: 10%;
+    padding-right: 10%;
+    @apply grid grid-cols-2
+}
+@screen md {
+    .organizer {
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+    
+    .coorganizers{
+        padding-left: 25%;
+        padding-right: 25%;
+        @apply grid grid-cols-3
+    }
+    
+    .sponsors {
+        padding-left: 25%;
+        padding-right: 25%;
+        @apply grid grid-cols-2
+    }
+}
