@@ -83,7 +83,7 @@ const Header = ({ menus, back }) => {
       <Link to="/">
         <div style={{ display: "flex", alignItem: "center", margin: "4px" }}>
           <img
-            src={require("assets/images/favicon2023.png")}
+            src={require("assets/images/favicon2024.png")}
             style={{ maxHeight: "50px" }}
           />
           <h1 className="header header__title">{headerData.title}</h1>
