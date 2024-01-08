@@ -7,38 +7,38 @@ import Header from "./header";
 import Footer from "./footer";
 
 const Layout = ({ children, menus, back }) => {
-    const data = useStaticQuery(graphql`
-        query SiteTitleQuery {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
         }
-    `);
+      }
+    }
+  `);
 
-    // Initialize scroll animations
-    useEffect(() => {
-        sal();
-    }, []);
+  // Initialize scroll animations
+  useEffect(() => {
+    sal();
+  }, []);
 
-    return (
-        <div className="wrapper overflow-hidden">
-            <h1 className="hidden">{data.site.siteMetadata.title}</h1>
-            <Header menus={menus} back={back} />
-            <div>{children}</div>
-            <Footer menus={menus} />
-        </div>
-    );
+  return (
+    <div className="wrapper overflow-hidden">
+      <h1 className="hidden">{data.site.siteMetadata.title}</h1>
+      <Header menus={menus} back={back} />
+      <div>{children}</div>
+      <Footer menus={menus} />
+    </div>
+  );
 };
 
 Layout.defaultProps = {
-    menus: null,
+  menus: null,
 };
 
 Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-    menus: PropTypes.any,
+  children: PropTypes.node.isRequired,
+  menus: PropTypes.any,
 };
 
 export default Layout;

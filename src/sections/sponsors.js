@@ -60,8 +60,8 @@ const Sponsors = ({ contentModuleId }) => {
           data-sal-easing="ease-in-cubic"
         >
           {content.node.imageOrganizers.map((sponsor) => (
-              <SponsorItem href={sponsor.description} fluid={sponsor.fluid} />
-            ))}
+            <SponsorItem href={sponsor.description} fluid={sponsor.fluid} />
+          ))}
         </div>
         <br />
         <div className="mx-auto">
@@ -81,8 +81,8 @@ const Sponsors = ({ contentModuleId }) => {
           data-sal-easing="ease-in-cubic"
         >
           {content.node.imageCoOrganizers.map((sponsor) => (
-              <SponsorItem href={sponsor.description} fluid={sponsor.fluid} />
-            ))}
+            <SponsorItem href={sponsor.description} fluid={sponsor.fluid} />
+          ))}
         </div>
         <br />
         <div className="mx-auto">
@@ -102,8 +102,8 @@ const Sponsors = ({ contentModuleId }) => {
           data-sal-easing="ease-in-cubic"
         >
           {content.node.image_sponsors.map((sponsor) => (
-              <SponsorItem href={sponsor.description} fluid={sponsor.fluid} />
-            ))}
+            <SponsorItem href={sponsor.description} fluid={sponsor.fluid} />
+          ))}
         </div>
       </div>
     </section>

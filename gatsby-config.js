@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `2023 makeNTU: EUREKA`,
-    description: `makeNTU2023 websit1`,
+    title: `2024 makeNTU: EXPLORER`,
+    description: `makeNTU2024 websit1`,
     author: `NTUEEInfoDep`,
     siteUrl: process.env.SITE_URL,
   },
@@ -53,13 +53,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `2023 makeNTU: EUREKA`,
+        name: `2024 makeNTU: EXPLORER`,
         short_name: `makeNTU`,
         start_url: `/`,
         background_color: `#6C63FF`,
         theme_color: `#6C63FF`,
         display: `minimal-ui`,
-        icon: `src/assets/images/favicon2023.png`,
+        icon: `src/assets/images/favicon2024.png`,
       },
     },
     {
