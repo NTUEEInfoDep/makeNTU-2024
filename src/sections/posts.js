@@ -4,7 +4,7 @@ import { graphql, Link, useStaticQuery } from "gatsby";
 import PostPreview from "components/postPreview";
 import "../assets/css/layouts/posts.css";
 import $ from "jquery";
-import { ContactSupportOutlined } from "@material-ui/icons";
+// import { ContactSupportOutlined } from "@material-ui/icons";
 
 const Posts = ({ contentModuleId }) => {
   const data = useStaticQuery(graphql`

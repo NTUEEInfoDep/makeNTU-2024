@@ -1,4 +1,4 @@
-import { fetchAsyncQuestionPropertyQuestionProperty } from "inquirer/lib/utils/utils";
+// import { fetchAsyncQuestionPropertyQuestionProperty } from "inquirer/lib/utils/utils";
 import React from "react";
 
 const Map = ({ feature }) => {

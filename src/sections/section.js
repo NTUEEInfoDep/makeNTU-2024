@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import About from "sections/about";
 import Prizes from "sections/prizes";
-import Contact from "sections/contact";
+// import Contact from "sections/contact";
 import Hero from "sections/hero";
 import Timeline from "sections/timeline";
 import PageNotFound from "sections/pageNotFound";

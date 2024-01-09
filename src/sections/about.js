@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+// import Img from "gatsby-image";
 
 import AboutItem from "components/aboutItem";
 
