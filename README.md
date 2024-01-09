@@ -21,19 +21,19 @@ The theme requires you to have a contentful account. You can register your accou
 
 Clone the theme
 
-```
+```sh
 git clone git@github.com:thebakerdev/gatsby-starter-zenii.git
 ```
 
 Install dependencies
 
-```
+```sh
 npm install
 ```
 
 This project comes with a Contentful setup command from [https://github.com/contentful-userland/gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter).
 
-```
+```sh
 npm run setup
 ```
 
@@ -41,21 +41,24 @@ The process will ask for your credentials which can be found on your contentful 
 
 ### Development Commands
 
-Run the project locally
+Switch NodeJS version to v16.20.2 (You should first **have NodeJS v16.20.2 installed**), and run the project locally.
 
-```
+```sh
+nvm use
 npm run develop
 ```
 
+Some errors may pop out, just type `y` and enter to continue. The website will be running on `localhost:8000`
+
 Build the project
 
-```
+```sh
 npm run build
 ```
 
 Serve the build project
 
-```
+```sh
 npm run serve
 ```
 
@@ -81,7 +84,7 @@ You can simply add new sections and pages in the theme by creating new contentfu
 - Import the new component inside the **section.js** file and add it to the components array.
 - Add static query inside your new section component. Make sure that the component accepts **contentModuleId** as a prop.
 
-```
+```django
 const data = useStaticQuery(graphql`
   query {
       allContentfulLayoutPortfolio {
