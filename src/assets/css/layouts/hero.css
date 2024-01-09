@@ -1,5 +1,5 @@
 .hero__bg {
-  background-image: url("../images/makeNTU2024-bg.png");
+  background-image: url("../../images/makeNTU2024-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 }
 
 .hero__tagline-pretitle-image {
-  background-image: url("../images/makeNTU2024Title.png");
+  background-image: url("../../images/makeNTU2024Title.png");
   @apply w-full h-40;
   background-size: contain;
   background-repeat: no-repeat;
