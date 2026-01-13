@@ -38,11 +38,11 @@ const Hero = ({ contentModuleId }) => {
           <div className="hero__transbox">
             <div className="hero__tagline-content-wrap">
               <h2 className="hero__tagline-title" data-sal="fade">
-                <span className="hero__tagline-pretitle">2025 MakeNTU</span>
+                <span className="hero__tagline-pretitle">MakeNTU 2026</span>
                 <br />
                 {/*<span className="hero__tagline-pretitle-image"></span>*/}
               </h2>
-              <div className="hero__tagline-pretitle-image"></div>
+              {/* <div className="hero__tagline-pretitle-image"></div> */}
               {content.node.subheading.split(" ").map((line) => {
                 return (
                   <p
