@@ -11,6 +11,7 @@ const Footer = ({ menus }) => {
         addressLine1
         addressLine2
         email
+        lineId
         menuLinks
         followUs
         facebookUrl
@@ -85,6 +86,19 @@ const Footer = ({ menus }) => {
                   <div className="item__content">
                     <p className="item__text">
                       {data.contentfulContactDetails.email}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            ) : (
+              <li />
+            )}
+            {data.contentfulContactDetails.lineId ? (
+              <li className="mb-2">
+                <div className="item">
+                  <div className="item__content">
+                    <p className="item__text">
+                      Line : {data.contentfulContactDetails.lineId}
                     </p>
                   </div>
                 </div>
