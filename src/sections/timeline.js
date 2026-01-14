@@ -17,6 +17,27 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
   primary: { backgroundColor: "#0081A8" },
   secondary: { backgroundColor: "#CC0049" },
+
+  timelineRow: {
+    display: "grid",
+    gridTemplateColumns: "1fr 40px 1fr",
+    alignItems: "center",
+    columnGap: 8,
+  },
+
+  left: {
+    textAlign: "right",
+    whiteSpace: "nowrap",
+    justifySelf: "end",
+    minWidth: "max-content",
+  },
+
+  right: {
+    textAlign: "left",
+    whiteSpace: "nowrap",
+    justifySelf: "start",
+    minWidth: "max-content",
+  },
 }));
 
 export default ({ contentModuleId }) => {
@@ -48,9 +69,7 @@ export default ({ contentModuleId }) => {
   const TimelineEventLeft = (props) => {
     return (
       <Typography color={props.color || "primary"}>
-        <Box textAlign="right" overflow="visable" whiteSpace="nowrap">
-          {props.children}
-        </Box>
+        <Box className={classes.left}>{props.children}</Box>
       </Typography>
     );
   };
@@ -70,9 +89,7 @@ export default ({ contentModuleId }) => {
   const TimelineEventRight = (props) => {
     return (
       <Typography color={props.color || "primary"}>
-        <Box textAlign="left" overflow="visable" whiteSpace="nowrap">
-          {props.children}
-        </Box>
+        <Box className={classes.right}>{props.children}</Box>
       </Typography>
     );
   };
@@ -101,30 +118,20 @@ export default ({ contentModuleId }) => {
     } else {
       return (
         <div>
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            wrap="nowrap"
-            spacing={1}
-          >
-            <Grid item xs={4}>
-              <TimelineEventLeft color={props.color}>
-                {props.left}
-              </TimelineEventLeft>
-            </Grid>
-            <Grid item>
-              <TimelineEventCenter color={props.color}>
-                <TimelineIcon type={props.center} />
-              </TimelineEventCenter>
-            </Grid>
-            <Grid item xs={4}>
-              <TimelineEventRight color={props.color}>
-                {props.right}
-              </TimelineEventRight>
-            </Grid>
-          </Grid>
+          <Box className={classes.timelineRow}>
+            <TimelineEventLeft color={props.color}>
+              {props.left}
+            </TimelineEventLeft>
+
+            <TimelineEventCenter color={props.color}>
+              <TimelineIcon type={props.center} />
+            </TimelineEventCenter>
+
+            <TimelineEventRight color={props.color}>
+              {props.right}
+            </TimelineEventRight>
+          </Box>
+
           <TimelineEventConnector end={props.end} />
         </div>
       );

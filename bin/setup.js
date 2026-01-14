@@ -77,9 +77,13 @@ inquirer
     });
     return { spaceId, managementToken };
   })
-  .then(({ spaceId, managementToken }) =>
-    spaceImport({ spaceId, managementToken, content: exportFile })
-  )
+
+  // Commented the following code to prevent overwriting the existing content in Contentful
+
+  // .then(({ spaceId, managementToken }) =>
+  //   spaceImport({ spaceId, managementToken, content: exportFile })
+  // )
+  
   .then((_, error) => {
     console.log(
       `All set! You can now run ${chalk.yellow(
