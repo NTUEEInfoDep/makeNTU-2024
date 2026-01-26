@@ -23,7 +23,7 @@ const Location = ({ contentModuleId }) => {
             }
             images {
               fluid(maxWidth: 1180, background: "rgb:000000") {
-                ...GatsbyContentfulFluid_tracedSVG
+                ...GatsbyContentfulFluid
               }
             }
           }
