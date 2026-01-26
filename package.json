@@ -71,6 +71,5 @@
   },
   "bugs": {
     "url": "https://github.com/NTUEEInfoDep/makeNTU-2024/issues"
-  },
-  "packageManager": "pnpm@8.3.0+sha512.c114bc6a9fd23f106a6d4333714364a00d2cb8baa4f41a8c96f8bc74cd8546e87050382a54660b7398d0e96c37baa55cfbce3326f376198993582b9b6a858fb5"
+  }
 }
