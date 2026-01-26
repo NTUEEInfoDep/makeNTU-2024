@@ -26,7 +26,7 @@ const Posts = ({ contentModuleId }) => {
               heroImage {
                 title
                 fluid(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
-                  ...GatsbyContentfulFluid
+                  ...GatsbyContentfulFluid_tracedSVG
                 }
               }
               description {
