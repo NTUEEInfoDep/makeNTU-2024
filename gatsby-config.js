@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `2025 makeNTU: HEPHAESTUS`,
-    description: `makeNTU2025 website`,
+    title: `2026 makeNTU`,
+    description: `makeNTU2026 website`,
     author: `NTUEEInfoDep`,
     siteUrl: process.env.SITE_URL,
   },
@@ -53,7 +53,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `2025 makeNTU: HEPHAESTUS`,
+        name: `2026 makeNTU: HEPHAESTUS`,
         short_name: `makeNTU`,
         start_url: `/`,
         background_color: `#6C63FF`,
