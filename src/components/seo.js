@@ -12,20 +12,18 @@ import { useStaticQuery, graphql } from "gatsby";
 import defaultOpenGraphImage from "../assets/images/makeNTU2025.png";
 
 function SEO({ description, lang, meta, title, img, url }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            siteUrl
-          }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          siteUrl
         }
       }
-    `
-  );
+    }
+  `);
 
   const metaDescription = description || site.siteMetadata.description;
   const ogImageUrl = site.siteMetadata.siteUrl + (img || defaultOpenGraphImage);
@@ -88,6 +86,10 @@ function SEO({ description, lang, meta, title, img, url }) {
         {
           property: `image`,
           content: ogImageUrl,
+        },
+        {
+          name: "google-site-verification",
+          content: "mMql6StSiDI9d0cO4M7Iqqyuttgv8qwQWz2CjMZOSts",
         },
       ].concat(meta)}
     />
