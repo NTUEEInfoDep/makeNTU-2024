@@ -11,7 +11,7 @@ function Strong_pt_Calculator(ratio) {
 }
 const Prize = ({ prize }) => (
   <div className="prize" style={{ paddingTop: "15px", marginTop: "0px" }}>
-    <div className="prize__content">
+    <div className="prize__content" style={{height: "95vh"}}>
       <Img
         fluid={prize.image.fluid}
         className="prize__image"
