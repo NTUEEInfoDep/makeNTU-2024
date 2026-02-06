@@ -97,7 +97,7 @@ export default ({ contentModuleId }) => {
   const TimelineEventConnector = (props) => {
     return (
       <Typography color="primary">
-        <Box my={-1.2} textAlign="center">
+        <Box my={-1.8} textAlign="center">
           {props.end ? "" : "|"}
         </Box>
       </Typography>
@@ -109,7 +109,7 @@ export default ({ contentModuleId }) => {
       return (
         <div>
           <Typography color="primary">
-            <Box my={-1.2} textAlign="center" lineHeight={0.8}>
+            <Box my={-1.8} textAlign="center" lineHeight={1}>
               |<br />|<br />|<br />|<br />|
             </Box>
           </Typography>
@@ -118,7 +118,7 @@ export default ({ contentModuleId }) => {
     } else {
       return (
         <div>
-          <Box className={classes.timelineRow}>
+          <Box className={classes.timelineRow} py={1} >
             <TimelineEventLeft color={props.color}>
               {props.left}
             </TimelineEventLeft>
