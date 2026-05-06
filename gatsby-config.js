@@ -71,5 +71,13 @@ module.exports = {
       },
     },
     `@contentful/gatsby-transformer-contentful-richtext`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: process.env.SITE_URL,
+        sitemap: `${process.env.SITE_URL}sitemap.xml`,
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
   ],
 };
